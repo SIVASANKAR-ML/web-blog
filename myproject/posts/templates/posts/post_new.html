@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  new post
+{% endblock %}
+
+{% block content %}
+<section>
+  <h1>New post</h1>
+  {% comment %} from add image tag in the banner we are using the 'enctype' means encoding type
+  action refers to posts app in which urls.py named new-post which direct to the post_new.html
+  {% endcomment %}
+  <form class="form-with-validation login-form" action="{% url 'posts:new-post' %}" method="post"
+  enctype="multipart/form-data">
+     {% csrf_token %}
+     {{ form }}
+     <button class="form-submit">Add post</button>
+</form>  
+</section>
+{% endblock %}
+
+ 

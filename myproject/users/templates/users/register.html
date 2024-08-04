@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Register New User
+{% endblock %}
+
+{% block content %}
+<section class="register-section">
+    <div class="register-container">
+        <h1>Register a New User</h1>
+        <form class="form-with-validation register-form" action="/users/register/" method="post" id="registerForm">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="form-submit" id="submitButton">
+                Submit <span class="loading-spinner" style="display: none;"></span>
+            </button>
+            <p class="success-message" id="successMessage">Done!</p>
+        </form>
+    </div>
+</section>
+{% endblock %}

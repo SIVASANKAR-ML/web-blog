@@ -12,3 +12,6 @@ A web application for creating, managing, and viewing blog posts. This project i
 ## Installation
 
 ### Backend (Django)
+### pillow
+
+

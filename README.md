@@ -12,6 +12,6 @@ A web application for creating, managing, and viewing blog posts. This project i
 ## Installation
 
 ### Backend (Django)
-### pillow
+### pillow (Pillow is a friendly fork of PIL, the Python Imaging Library, by Jeffrey A. Clark and contributors  It provides image processing capabilities, file format support, and documentation for Python developers)
 
 
